@@ -6,17 +6,40 @@
   </head>
 
   <body>
-
     <h1 id="title">Developers Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve as Developers</p> 
     <form id="survey-form" action="">
-      <label id="name-label">Name:</label>
-      <input type="text" id="label" required>    
+          <h1 id="title">Developers Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve as Developers</p> 
+    <form id="survey-form" action="">
+      
+    <label id="name-label">Name:</label>
+      <input type="text" id="name" required placeholder="Username">    
       <P></P>
       <label id="email-label">Email:</label>
-      <input type="email" id="label" required>    
-      <label for="age">Age:</label>
-      <input type="number" id="label" min="10" max="100">    
+      <input type="email" id="email" required placeholder="Email adresse">    
+      <label id="number-label">Age:</label>
+      <input type="number" id="number" min="10" max="100" placeholder="Your age"> 
+
+      <label >What is your favorite feature of freeCodeCamp?</label>
+
+      <select id="dropdown">
+          <option value="lessons">Lessons</option>
+           <option value="challenges">Challenges</option>
+      </select>
+      
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+
+      <input type="checkbox" id="front" name="vehicle1" value="Frontend">
+      <label for="front"> Frontend</label><br>
+      <input type="checkbox" id="back" name="vehicle2" value="Backend">
+      <label for="back"> Backend</label><br>
+
+      <textarea name="moreinfo" id="moreinfo" cols="30" rows="10" ></textarea>
+      <input type="submit" id="submit" value="Send">    
     </form>
   </body>
 </html>
